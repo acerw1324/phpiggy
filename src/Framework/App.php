@@ -13,7 +13,8 @@ class App
         $this->router = new Router();
     }
 
-    public function run() {
+    public function run() 
+    {
         echo "Application is running";
     }
 }
