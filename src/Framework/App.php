@@ -20,6 +20,6 @@ class App
 
     public function add(string $path) 
     {
-        $this->add($path);
+        $this->router->add($path);
     }
 }
