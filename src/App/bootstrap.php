@@ -7,11 +7,9 @@ require __DIR__ . "/../../vendor/autoload.php";
 use Framework\App;
 use App\Controllers\HomeController;
 
-echo HomeController::class;
-
 $app = new App();
 
-$app->get('/', ['App\Controllers\HomeController', 'home']);
+$app->get('/', [HomeController::class, 'home']);
 
 dd($app);
 
