@@ -10,6 +10,8 @@ class Router
 
     public function add(string $method, string $path) 
     {
+        $path = $this->normalizePath($path);
+        
         $this->routes[] = [
             'path' => $path,
             'method' => strtoupper($method) 
