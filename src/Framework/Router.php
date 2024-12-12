@@ -12,7 +12,7 @@ class Router
     {
         $this->routes[] = [
             'path' => $path,
-            'method' => $method 
+            'method' => strtoupper($method) 
         ];
     }
 }
