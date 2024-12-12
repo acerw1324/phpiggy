@@ -11,7 +11,8 @@ class Router
     public function add(string $method, string $path) 
     {
         $this->routes[] = [
-            'path' => $path 
+            'path' => $path,
+            'method' => $method 
         ];
     }
 }
