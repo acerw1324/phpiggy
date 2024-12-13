@@ -27,4 +27,12 @@ class Router
 
         return $path;
     }
+
+    public function dispatch(string $path, string $method) 
+    {
+        $path = $this->normalizePath($path);
+        $method = strtoupper($method);
+
+        echo $path . $method;
+    }
 }
