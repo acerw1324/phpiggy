@@ -12,6 +12,6 @@ class Container
     {
         $this->definitions = [...$this->definitions, ...$newDefinitions];
 
-        dd($newDefinitions);
+        dd($this->definitions);
     }
 }
