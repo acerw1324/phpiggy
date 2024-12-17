@@ -13,6 +13,10 @@ class App
     {
         $this->router = new Router();
         $this->container = new Container();
+
+        if ($containerDefinitionsPath) {
+            $containerDefinitions = include $containerDefinitionsPath;
+        }
     }
 
     public function run()
