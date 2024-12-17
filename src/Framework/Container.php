@@ -30,6 +30,12 @@ class Container
             return new $className;
         }
 
-        dd($constructor);
+        $params = $constructor->getParameters();
+
+        if (count($params) === 0) {
+            return new $className;
+        }
+
+        dd($params);
     }
 }
