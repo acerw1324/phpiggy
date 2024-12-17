@@ -4,4 +4,9 @@ declare(strict_types=1);
 
 namespace Framework;
 
-class Container {}
+class Container
+{
+    private array $definitions = [];
+
+    public function addDefinitions() {}
+}
