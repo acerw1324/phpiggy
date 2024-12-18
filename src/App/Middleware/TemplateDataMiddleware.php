@@ -8,5 +8,8 @@ use Framework\Contracts\MiddlewareInterface;
 
 class TemplateDataMiddleware implements MiddlewareInterface
 {
-    public function process(callable $next) {}
+    public function process(callable $next)
+    {
+        echo "Template date Middleware";
+    }
 }
