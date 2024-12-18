@@ -59,5 +59,10 @@ class Container
         if (!array_key_exists($id, $this->definitions)) {
             throw new ContainerException("Class {$id} does not exist in container.");
         }
+
+        $factory = $this->definitions[$id];
+        $dependency = $factory();
+
+        return $dependency;
     }
 }
