@@ -54,5 +54,10 @@ class Container
         dd($params);
     }
 
-    public function get(string $id) {}
+    public function get(string $id)
+    {
+        if (!array_key_exists($id, $this->definitions)) {
+            throw new ContainerException("Class {$id} does not exist in container.");
+        }
+    }
 }
