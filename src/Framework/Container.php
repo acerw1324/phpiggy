@@ -53,4 +53,6 @@ class Container
 
         dd($params);
     }
+
+    public function get(string $id) {}
 }
