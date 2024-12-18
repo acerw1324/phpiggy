@@ -53,7 +53,7 @@ class Container
             $dependencies[] = $this->get($type->getName());
         }
 
-        dd($params);
+        dd($dependencies);
     }
 
     public function get(string $id)
