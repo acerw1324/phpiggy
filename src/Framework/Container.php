@@ -53,7 +53,7 @@ class Container
             $dependencies[] = $this->get($type->getName());
         }
 
-        dd($dependencies);
+        return $reflectionClass->newInstanceArgs($dependencies);
     }
 
     public function get(string $id)
