@@ -22,6 +22,7 @@ class Router
     {
         $path = trim($path, '/');
         $path = "/{$path}/";
+        $path = preg_replace('#[/]{2,}#', '/', $path);
 
         return $path;
     }
