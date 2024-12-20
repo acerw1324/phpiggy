@@ -15,4 +15,12 @@ class Router
             'method' => strtoupper($method)
         ];
     }
+
+    private function normalizePath(string $path): string
+    {
+        $path = trim($path, '/');
+        $path = "/{$path}/";
+
+        return $path;
+    }
 }
