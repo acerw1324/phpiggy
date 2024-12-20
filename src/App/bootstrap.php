@@ -9,9 +9,6 @@ use Framework\App;
 $app = new App();
 
 $app->get('/');
-$app->get('about/team');
-$app->get('/about/team');
-$app->get('/about/team/');
 
 dd($app);
 
