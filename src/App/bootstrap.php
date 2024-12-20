@@ -8,4 +8,6 @@ use Framework\App;
 
 $app = new App();
 
+$app->add('/');
+
 return $app;
