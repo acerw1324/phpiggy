@@ -8,6 +8,6 @@ class HomeController
 {
     public function home()
     {
-        echo 'home page';
+        echo 'Home Page';
     }
 }
