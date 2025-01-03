@@ -34,8 +34,14 @@ class Router
         $method = strtoupper($method);
 
         foreach ($this->routes as $route) {
-            if (!preg_match("#^{$route['path']}$#", $path)) {
+            if (
+                !preg_match("#^{$route['path']}$#", $path) ||
+                $route['method'] !== $method
+            ) {
+                continue;
             }
+
+            echo 'route found';
         }
     }
 }
