@@ -4,5 +4,3 @@
 </footer>
 <!-- End Footer -->
 </body>
-
-</html>
