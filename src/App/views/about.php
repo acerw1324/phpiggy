@@ -6,6 +6,11 @@
     <!-- Page Title -->
     <h3>About Page</h3>
 
+    <hr />
 
+    <!-- Escaping Data -->
+    <p>Escaping Data: </p>
+</section>
+<!-- End Main Content Area -->
 
-    <?php include $this->resolve("partials/_footer.php"); ?>
+<?php include $this->resolve("partials/_footer.php"); ?>
